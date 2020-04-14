@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Вязание на заказ</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__search" href="#">Поиск</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__cart" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <p class="catalog-sections__delivery">Бесплатная доставка по России</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-form">
+      <h1 class="page-form__title">Вязание на заказ</h1>
+
+      <section class="form">
+        <h2 class="visually-hidden">Форма для заказ</h2>
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form-filter" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form-filter__item filter">
+            <fieldset class="filter__fieldset type">
+              <legend class="filter__legend legend">Тип</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="radio" name="type-product" value="interior" id="type-interior" checked>
+                  <label class="filter__label" for="type-interior">Аксессуар для интерьера</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="radio" name="type-product" value="toy" id="type-toy">
+                  <label class="filter__label" for="type-toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__fieldset color">
+              <legend class="filter__legend legend">Цвет</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="checkbox" name="color-product" id="color-white" checked>
+                  <label class="filter__label" for="color-white">Белый</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="checkbox" name="color-product" id="color-grey" checked>
+                  <label class="filter__label" for="color-grey">Серый</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="checkbox" name="color-product" id="color-tiffany">
+                  <label class="filter__label" for="color-tiffany">«Тиффани»</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="checkbox" name="color-product" id="color-black">
+                  <label class="filter__label" for="color-black">Черный</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="checkbox" name="color-product" id="color-pink">
+                  <label class="filter__label" for="color-pink">Розовый</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input visually-hidden" type="checkbox" name="color-product" id="color-orange">
+                  <label class="filter__label" for="color-orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form-filter__item customer customer--name">
+            <p class="customer__title legend">ФИО</p>
+            <label class="customer__label" for="customer-name">Имя:</label>
+            <input class="customer__input" id="customer-name" type="text" name="customer-info" value="" placeholder="Введите ваше имя*">
+            <label class="customer__label" for="customer-surname">Фамилия:</label>
+            <input class="customer__input" id="customer-surname" type="text" name="customer-info" value="" placeholder="Укажите фамилию*">
+            <label class="customer__label" for="customer-middle-name">Отчество:</label>
+            <input class="customer__input" id="customer-middle-name" type="text" name="customer-info" value="" placeholder="Отчество, если желаете">
+          </div>
+          <div class="form-filter__item customer customer--contacts">
+            <label class="customer__label legend" for="customer-phone">ТЕЛ</label>
+            <input class="customer__input" id="customer-phone" type="tel" name="customer-info" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <label class="customer__label legend" for="customer-email">E-mail</label>
+            <input class="customer__input" id="customer-email" type="email" name="customer-info" value="" placeholder="Ваш Email*">
+          </div>
+          <div class="form-filter__item customer customer--wishes">
+            <label class="customer__label legend" for="customer-wishes">ДОП</label>
+            <textarea class="customer__input" id="customer-wishes" name="customer-info" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <small class="form-filter__note">
+            <sup>*</sup> Поля обязательны для заполнения
+          </small>
+          <button class="form-filter__button button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__home">
+          <a class="page-footer__logo" href="index.html">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#" aria-label="Instagram"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
