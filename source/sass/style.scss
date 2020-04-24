@@ -1,3 +1,16 @@
-a {
-  text-decoration: none;
-}
+@import "variables";
+@import "mixins.scss";
+@import "visually-hidden";
+@import "button.scss";
+@import "general.scss";
+@import "main-nav.scss";
+@import "catalog-sections.scss";
+@import "product-week.scss";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "catalog.scss";
+@import "production.scss";
+@import "modal-cart.scss";
+@import "form.scss";
