@@ -11,8 +11,8 @@
 }
 
 .production__title {
+  @include h2_style;
   font-size: 17px;
-  font-weight: bold;
   line-height: 24px;
   margin: 0 0 26px 91px;
 }
@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.video__button {
+.production__play {
   border: none;
   background: none;
   position: absolute;

@@ -6,6 +6,7 @@
 }
 
 .catalog__title {
+  @include h2_style;
   font-size: 27px;
 }
 
@@ -16,6 +17,7 @@
 }
 
 .catalog__list {
+  @include ul_style;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,26 +32,25 @@
 .catalog__description {
   margin-top: -7px;
   padding: 30px 28px;
-  padding-bottom: 30px;
   border: solid 1px #ececec;
 }
 
 .catalog__name {
+  @include h3_style;
   font-size: 17px;
   line-height: 24px;
-  margin: 0;
 }
 
 .catalog__size {
+  @include zero_offset;
   font-size: 13px;
   line-height: 30px;
-  margin: 0;
 }
 
 .catalog__price {
+  @include zero_offset;
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;
   color: $text-black;
-  margin: 0;
 }

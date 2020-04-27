@@ -1,0 +1,23 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main-nav__toggle {
+  width: 21px;
+  height: 14px;
+  position: absolute;
+  top: -47px;
+  right: 40px;
+}
+
+.main-nav__list {
+  @include ul_style;
+}
+
+.main-nav__delivery {
+  display: none;
+}

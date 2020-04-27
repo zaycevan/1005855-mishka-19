@@ -12,12 +12,10 @@
   <body>
 
     <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
-          </a>
-        </div>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -30,17 +28,17 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="user-list__search" href="#">Поиск</a>
+              <a class="user-list__search" href="#">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
               <a class="user-list__cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
           <ul class="main-nav__list actual-list">
-            <li class="site-list__item">
+            <li class="actual-list__item">
               <a href="#">Новые поступления</a>
             </li>
-            <li class="site-list__item">
+            <li class="actual-list__item">
               <a href="#">Распродажа</a>
             </li>
           </ul>
@@ -109,7 +107,7 @@
             <video width="260" height="150" poster="img/video-mobile@1x.jpg">
               <source src="video/video.mp4">
             </video>
-            <button class="video__button" type="button" aria-label="Запустить видео">
+            <button class="production__play" type="button" aria-label="Запустить видео">
               <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="77" viewbox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
                 <g>
                   <g>
@@ -132,25 +130,25 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__home">
-          <a class="page-footer__logo">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
+        <div class="page-footer__item logo">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина Мишка">
           </a>
         </div>
-        <div class="page-footer__social social">
+        <div class="page-footer__item social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="Instagram"></a>
+              <a class="social__link social__link--instagram" href="#" aria-label="Instagram">Instagram</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+              <a class="social__link social__link--facebook" href="#" aria-label="Facebook">Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
+              <a class="social__link social__link--twitter" href="#" aria-label="Twitter">Twitter</a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__item copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
@@ -160,18 +158,18 @@
     <section class="modal-cart">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
       <p class="modal-cart__text">Выберите размер:</p>
-      <div class="modal-cart__sizes sizes">
-        <div class="sizes_item">
-          <input class="sizes__checkbox visually-hidden" type="checkbox" id="size-s" name="size-checkbox" value="S">
-          <label class="sizes__button" for="size-s">S</label>
+      <div class="modal-cart__sizes">
+        <div class="modal-cart__item">
+          <input class="modal-cart__checkbox visually-hidden" type="checkbox" id="size-s" name="size-checkbox" value="S">
+          <label class="modal-cart__button" for="size-s">S</label>
         </div>
-        <div class="sizes_item">
-          <input class="sizes__checkbox visually-hidden" type="checkbox" id="size-m" name="size-checkbox" value="M">
-          <label class="sizes__button" for="size-m">M</label>
+        <div class="modal-cart__item">
+          <input class="modal-cart__checkbox visually-hidden" type="checkbox" id="size-m" name="size-checkbox" value="M">
+          <label class="modal-cart__button" for="size-m">M</label>
         </div>
-        <div class="sizes_item">
-          <input class="sizes__checkbox visually-hidden" type="checkbox" id="size-l" name="size-checkbox" value="L">
-          <label class="sizes__button" for="size-l">L</label>
+        <div class="modal-cart__item">
+          <input class="modal-cart__checkbox visually-hidden" type="checkbox" id="size-l" name="size-checkbox" value="L">
+          <label class="modal-cart__button" for="size-l">L</label>
         </div>
       </div>
       <button class="modal-cart__add button" type="submit">Добавить</button>

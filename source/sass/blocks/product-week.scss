@@ -4,14 +4,13 @@
   padding: 0;
 }
 
-.product-week__item {
+.product-week__wrapper {
   margin: 0;
   padding: 35px 30px;
 }
 
 .product-week__name {
-  margin: 0;
-  padding: 0;
+  @include h3_style;
   text-align: left;
 }
 
@@ -38,7 +37,6 @@
 
 .product-week__price {
   margin: 30px auto;
-  margin-bottom: 30px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;

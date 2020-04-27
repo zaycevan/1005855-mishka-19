@@ -5,7 +5,7 @@
 }
 
 .contacts__title {
-  margin: 0;
+  @include h2_style;
   padding: 40px 30px;
   font-size: 18px;
 }
@@ -21,21 +21,22 @@
     height: 46px;
     vertical-align: top;
   }
-
-  .contacts__field {
-    width: 78px;
-  }
 }
 
-.contacts__value--address {
-  padding-right: 40px;
+
+.contacts__value {
+  width: 140px;
+
+  &--address {
+    padding-right: 40px;
+  }
 }
 
 .contacts__map {
   width: 320px;
-  margin: 0;
-  padding: 0;
   position: relative;
+
+  @include zero-offset;
 
   iframe {
     position: absolute;
