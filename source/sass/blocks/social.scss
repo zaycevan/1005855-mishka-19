@@ -1,0 +1,7 @@
+.social__list {
+  @include ul_style;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px auto;
+}

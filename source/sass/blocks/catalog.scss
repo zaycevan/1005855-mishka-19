@@ -1,0 +1,56 @@
+.catalog__header {
+  background-color: $bg-grey;
+  margin: 0;
+  padding: 74px 0;
+  text-align: center;
+}
+
+.catalog__title {
+  @include h2_style;
+  font-size: 27px;
+}
+
+.catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog__list {
+  @include ul_style;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.catalog__item {
+  width: 260px;
+  margin-top: 30px;
+}
+
+.catalog__description {
+  margin-top: -7px;
+  padding: 30px 28px;
+  border: solid 1px #ececec;
+}
+
+.catalog__name {
+  @include h3_style;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog__size {
+  @include zero_offset;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog__price {
+  @include zero_offset;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $text-black;
+}

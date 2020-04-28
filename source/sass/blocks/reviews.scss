@@ -1,0 +1,55 @@
+.reviews__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.reviews__title {
+  @include h2_style;
+  margin: 60px 0 30px 30px;
+}
+
+.reviews__item {
+  @include zero_offset;
+  padding: 0 30px;
+}
+
+.reviews__text {
+  @include zero_offset;
+  margin-bottom: 38px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  color: $text-black;
+}
+
+.reviews__author-email {
+  font-size: 17px;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.reviews__button {
+  display: flex;
+  justify-content: center;
+  margin: 34px 30px;
+}
+
+.reviews__prev {
+  margin: auto;
+  width: 130px;
+  height: 52px;
+}
+
+.reviews__next {
+  margin: auto;
+  width: 130px;
+  height: 52px;
+}
+
+.reviews__write {
+  margin: 45px auto;
+}

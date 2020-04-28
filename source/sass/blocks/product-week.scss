@@ -1,0 +1,45 @@
+.product-week {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-week__wrapper {
+  margin: 0;
+  padding: 35px 30px;
+}
+
+.product-week__name {
+  @include h3_style;
+  text-align: left;
+}
+
+.product-week__title {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: #63d1bb;
+}
+
+.product-week__properties {
+  margin-bottom: 28px;
+  border-collapse: collapse;
+  width: 260px;
+  text-align: left;
+
+  tr {
+    height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+  }
+}
+
+.product-week__price {
+  margin: 30px auto;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: $text-grey;
+}

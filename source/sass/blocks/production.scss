@@ -1,0 +1,43 @@
+.production__wrapper {
+  width: 260px;
+  margin: 30px auto;
+  margin-bottom: 55px;
+  padding: 30px 0;
+  border: solid 1px #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.production__title {
+  @include h2_style;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 0 26px 91px;
+}
+
+.production__video {
+  position: relative;
+}
+
+.production__play {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  margin-top: -39px;
+  margin-left: -50px;
+}
+
+.production__description {
+  font-size: 13px;
+  margin: 30px 34px;
+}
+
+.production__cart {
+  width: 192px;
+}

@@ -1,0 +1,68 @@
+.filter__header {
+  background-color: $bg-grey;
+  margin-bottom: 30px;
+  padding: 74px 0;
+  text-align: center;
+}
+
+.filter__title {
+  @include h2_style;
+  font-size: 27px;
+}
+
+.filter__description {
+  width: 260px;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+.filter__fieldset {
+  @include fieldset_style;
+}
+
+.filter__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.filter__legend {
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $text-blue;
+}
+
+.filter__list {
+  @include ul_style;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 60px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: left;
+  color: $text-black;
+}
+
+.filter__footer {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.filter__button {
+  margin: 30px auto;
+}

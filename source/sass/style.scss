@@ -1,3 +1,29 @@
-a {
-  text-decoration: none;
-}
+@import "global/variables.scss";
+@import "global/font.scss";
+@import "global/visually-hidden.scss";
+@import "global/general.scss";
+@import "global/mixin.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/actual-list.scss";
+@import "blocks/catalog-sections.scss";
+@import "blocks/product-week.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/logo.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/catalog.scss";
+@import "blocks/production.scss";
+@import "blocks/modal-cart.scss";
+@import "blocks/filter.scss";
+@import "blocks/filter-type.scss";
+@import "blocks/filter-color.scss";
+@import "blocks/filter-customer.scss";
+@import "blocks/filter-contact.scss";
+@import "blocks/filter-wishes.scss";

@@ -1,0 +1,50 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contacts__title {
+  @include h2_style;
+  padding: 40px 30px;
+  font-size: 18px;
+}
+
+.contacts__table {
+  margin: 0 30px 42px 30px;
+  border-collapse: collapse;
+  width: 260px;
+  text-align: left;
+  line-height: 30px;
+
+  tr {
+    height: 46px;
+    vertical-align: top;
+  }
+}
+
+
+.contacts__value {
+  width: 140px;
+
+  &--address {
+    padding-right: 40px;
+  }
+}
+
+.contacts__map {
+  width: 320px;
+  position: relative;
+
+  @include zero-offset;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.contacts__write {
+  margin: 39px 30px;
+}
