@@ -25,6 +25,7 @@
 
   .site-list__item {
     text-align: left;
+
     @include zero-offset;
     padding-right: 30px;
     box-shadow: none;
@@ -47,4 +48,3 @@
     box-shadow: inset 1px 0 0 0 #ececec;
   }
 }
-
