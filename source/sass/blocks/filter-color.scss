@@ -1,3 +1,53 @@
+.filter__fieldset {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .filter-color__item {
   margin-top: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .filter__fieldset--bg-grey {
+    background-color: $bg-grey;
+  }
+
+  .filter-color {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .filter-color__item {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-color {
+    margin-left: 155px;
+    margin-right: 90px;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .filter-color__item {
+    width: 120px;
+    margin-right: 130px;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+
+  .filter-color__item:nth-child(3n) {
+    margin-right: 0;
+  }
 }

@@ -1,3 +1,8 @@
+.filter {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .filter__header {
   background-color: $bg-grey;
   margin-bottom: 30px;
@@ -11,9 +16,18 @@
 }
 
 .filter__description {
-  width: 260px;
-  font-size: 13px;
+  width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 30px;
+  font-size: 13px;
+}
+
+.filter__form {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .filter__fieldset {
@@ -21,8 +35,15 @@
 }
 
 .filter__wrapper {
-  width: 260px;
+  width: auto;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.filter__max {
+  width: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -52,9 +73,10 @@
 }
 
 .filter__footer {
-  width: 260px;
+  width: auto;
   margin: 0 auto;
   margin-bottom: 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,4 +87,95 @@
 
 .filter__button {
   margin: 30px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .filter__header {
+    margin-bottom: 70px;
+    padding: 100px 0;
+  }
+
+  .filter__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .filter__description {
+    width: auto;
+    padding: 0 50px;
+    margin-bottom: 70px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .filter__form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .filter__max {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .filter__wrapper--bg-grey {
+    background-color: $bg-grey;
+  }
+
+  .filter__legend {
+    margin: 0;
+  }
+
+  .filter__list {
+    margin-left: 200px;
+    font-size: 19px;
+  }
+
+  .filter__footer {
+    margin-bottom: 0;
+    padding: 50px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 17px;
+  }
+
+  .filter__button {
+    order: -1;
+    margin: 0;
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter__header {
+    margin-bottom: 100px;
+  }
+
+  .filter__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .filter__description {
+    max-width: 1150px;
+    padding: 0 225px;
+  }
+
+  .filter__max {
+    max-width: 1150px;
+    padding: 0 110px;
+  }
+
+  .filter__list {
+    margin-left: 160px;
+  }
+
+  .filter__footer {
+    max-width: 1150px;
+    padding: 50px 225px;
+  }
 }

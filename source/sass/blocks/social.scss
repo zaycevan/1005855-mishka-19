@@ -3,5 +3,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
   margin: 25px auto;
+}
+
+.social__item {
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin: 0;
+  }
 }
