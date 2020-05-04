@@ -1,9 +1,8 @@
 .main-nav {
   width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 .main-nav__toggle {
@@ -20,4 +19,40 @@
 
 .main-nav__delivery {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100px;
+
+    @include zero-offset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 1150px;
+  }
 }

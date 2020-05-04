@@ -1,6 +1,7 @@
 .button {
   display: block;
   width: 256px;
+  box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 18px;

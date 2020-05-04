@@ -4,3 +4,16 @@
   padding: 15px;
   border: solid 2px #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .customer-wishes__input {
+    margin: 50px 0 0 130px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .customer-wishes__input {
+    margin: 50px 115px 0 75px;
+  }
+}

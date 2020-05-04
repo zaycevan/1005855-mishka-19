@@ -3,7 +3,13 @@
   margin-top: 30px;
 }
 
-.filter-customer__name {
+.filter-customer__list {
+  @include ul_style;
+}
+
+.filter-customer__item {
+  width: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -22,4 +28,36 @@
   line-height: 50px;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-customer__list {
+    width: auto;
+    margin: 20px 0 50px 130px;
+    flex-grow: 1;
+  }
+
+  .filter-customer__item {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: 19px;
+  }
+
+  .filter-customer__label {
+    margin-top: 40px;
+    margin-right: 25px;
+  }
+
+  .filter-customer__input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-customer__list {
+    margin: 20px 115px 50px 70px;
+  }
 }

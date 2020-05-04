@@ -1,5 +1,51 @@
+.filter-contact__list {
+  @include ul_style;
+}
+
+.filter-contact__item {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .filter-contact__input {
+  box-sizing: border-box;
   line-height: 50px;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-contact__list {
+    width: auto;
+    margin: 20px auto;
+    flex-grow: 1;
+  }
+
+  .filter-contact__item {
+    margin: 30px auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .filter-contact__input {
+    width: 75%;
+    box-sizing: border-box;
+    margin-left: auto;
+    padding-left: 20px;
+    background-color: $bg-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-contact__list {
+    margin-right: 115px;
+  }
+
+  .filter-contact__input {
+    width: 85.7%;
+  }
 }

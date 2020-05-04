@@ -1,24 +1,33 @@
 .catalog-sections {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 76px;
-  background-color: $bg-grey;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: -126.5px -17px;
+  background-position: center -17px;
   background-repeat: no-repeat;
 }
 
+.catalog-sections__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 76px;
+}
+
 .catalog-sections__description {
+  width: 250px;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
   display: block;
   text-align: center;
-  margin: auto 40px;
+  margin: 0 auto;
 }
 
-.catalog-sections__wrapper {
+.catalog-sections__list {
+  @include ul_style;
   width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin-top: 120px;
@@ -27,7 +36,7 @@
 .catalog-sections__item {
   width: 100%;
 
-  @include zero_offset;
+  @include zero-offset;
 
   &--interior {
     background-color: #63d1bb;
@@ -38,12 +47,72 @@
   }
 }
 
+.catalog-sections__link {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+}
+
 .catalog-sections__name {
-  width: 106px;
-  margin: 30px 0 30px 30px;
+  @include zero-offset;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
   text-align: left;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-sections {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center 0;
+  }
+
+  .catalog-sections__wrapper {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 155px;
+  }
+
+  .catalog-sections__description {
+    width: auto;
+    margin: 0 auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .catalog-sections__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 370px;
+    padding: 0 50px;
+  }
+
+  .catalog-sections__item {
+    width: 50%;
+  }
+
+  .catalog-sections__link {
+    padding: 35px;
+  }
+
+  .catalog-sections__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-sections {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .catalog-sections__description {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog-sections__wrapper {
+    max-width: 1150px;
+  }
 }
