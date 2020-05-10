@@ -35,4 +35,3 @@ if (document.querySelector(".contacts__map")) {
 
   window.addEventListener("load", hideImageMap);
 }
-
