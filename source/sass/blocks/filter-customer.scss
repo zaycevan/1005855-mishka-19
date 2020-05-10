@@ -1,15 +1,18 @@
 .filter-customer__title {
   @include zero-offset;
-  margin-top: 30px;
+  margin-top: 9px;
 }
 
 .filter-customer__list {
   @include ul_style;
+  margin-top: 7px;
+  margin-bottom: 8px;
 }
 
 .filter-customer__item {
   width: auto;
   margin: 0 auto;
+  margin-top: 22px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,23 +24,39 @@
 }
 
 .filter-customer__label {
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 .filter-customer__input {
+  height: 50px;
   line-height: 50px;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 0 #62d1ba;
+  }
+}
+
+.filter-color__label:hover,
+.filter-color__label:focus {
+  &::before {
+    border: 2px solid #62d1ba;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .filter-customer__list {
     width: auto;
-    margin: 20px 0 50px 130px;
+    margin: 26px 0 50px 125px;
     flex-grow: 1;
   }
 
   .filter-customer__item {
+    margin-top: 0;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
@@ -50,14 +69,19 @@
   }
 
   .filter-customer__input {
+    height: 54px;
     box-sizing: border-box;
     flex-grow: 1;
     padding-left: 20px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .filter-customer__list {
-    margin: 20px 115px 50px 70px;
+    margin: 25px 115px 50px 72px;
   }
 }

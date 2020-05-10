@@ -7,8 +7,17 @@
 }
 
 .page-header__logo {
-  margin: 22px auto;
+  margin: 21px auto 17px auto;
   text-align: center;
+
+  &:hover img,
+  &:focus img {
+    opacity: 0.6;
+  }
+
+  &:active img {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -24,11 +33,10 @@
   }
 
   .page-header__logo {
-    display: block;
     position: absolute;
     margin: 0;
     top: 22px;
-    left: 50px;
+    left: 6.5%;
     z-index: 3;
   }
 

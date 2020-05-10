@@ -1,20 +1,82 @@
 .filter-type__item {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.filter-type__label {
+  margin-bottom: -5px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-type__label::before {
+  content: "";
+  position: absolute;
+  left: -62px;
+  top: -9.5px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.filter-type__input:checked + .filter-type__label::after {
+  content: "";
+  position: absolute;
+  top: 3.3px;
+  left: -49px;
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.filter-type__label:hover,
+.filter-type__label:focus {
+  &::before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.filter-type__label:active {
+  &::before {
+    border: 2px solid #444444;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .filter-type {
-    margin-bottom: 60px;
+    margin-bottom: 75px;
+  }
+
+  .filter-type__item {
+    margin-top: 63px;
+  }
+
+  .filter-type__label::before {
+    width: 49px;
+    height: 49px;
+    left: -81px;
+    top: -15px;
+  }
+
+  .filter-type__input:checked + .filter-type__label::after {
+    top: 1px;
+    left: -63px;
+    width: 19px;
+    height: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .filter-type {
-    margin-bottom: 10px;
+    margin-bottom: 23px;
   }
 
   .filter-type__item {
-    margin-top: 0;
+    margin-top: 15px;
     margin-bottom: 50px;
   }
 }

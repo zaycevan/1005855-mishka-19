@@ -5,47 +5,142 @@
 .filter-contact__item {
   width: auto;
   margin: 0 auto;
+  margin-bottom: 9px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+.filter-contact__label {
+  margin-bottom: 8px;
+}
+
+.filter-contact__item--mail {
+  .filter__legend::before {
+    width: 67%;
+  }
+}
+
 .filter-contact__input {
   box-sizing: border-box;
+  height: 50px;
   line-height: 50px;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 0 #62d1ba;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+  }
+}
+
+.filter-contact__icon-tel {
+  position: absolute;
+  bottom: 15px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.2;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.filter-contact__icon-mail {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.2;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.filter-contact__input:hover + .filter-contact__icon-tel,
+.filter-contact__input:focus + .filter-contact__icon-tel,
+.filter-contact__input:active + .filter-contact__icon-tel,
+.filter-contact__input:hover + .filter-contact__icon-mail,
+.filter-contact__input:focus + .filter-contact__icon-mail,
+.filter-contact__input:active + .filter-contact__icon-mail {
+  opacity: 1;
+
+  path {
+    fill: #62d1ba;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .filter-contact__list {
     width: auto;
-    margin: 20px auto;
+    margin: 25px auto;
     flex-grow: 1;
   }
 
   .filter-contact__item {
-    margin: 30px auto;
+    margin: 25px auto;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
   }
 
   .filter-contact__input {
-    width: 75%;
+    width: 100%;
+    height: 52px;
     box-sizing: border-box;
-    margin-left: auto;
+    margin-left: 135px;
     padding-left: 20px;
     background-color: $bg-grey;
+  }
+
+  .filter-contact__icon-tel {
+    bottom: 15px;
+    right: 25px;
+  }
+
+  .filter-contact__icon-mail {
+    bottom: 10px;
+    right: 22px;
+  }
+
+  .filter-contact__item--mail {
+    .filter-contact__input {
+      margin-left: 108px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .filter-contact__list {
-    margin-right: 115px;
+    margin: 26px 115px 23px 0;
   }
 
   .filter-contact__input {
-    width: 85.7%;
+    width: 100%;
+    margin-left: 80px;
+  }
+
+  .filter-contact__item--mail {
+    .filter-contact__input {
+      margin-left: 55px;
+    }
+  }
+
+  .filter-contact__icon-tel {
+    right: 7px;
+  }
+
+  .filter-contact__icon-mail {
+    right: 4px;
   }
 }

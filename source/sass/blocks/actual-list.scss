@@ -5,8 +5,9 @@
 @media (min-width: $desktop-width) {
   .actual-list {
     position: absolute;
+    z-index: 10;
     left: 0;
-    top: 100px;
+    top: 106px;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,13 +19,24 @@
     box-shadow: none;
 
     @include zero-offset;
-    padding-right: 60px;
+    padding-right: 61px;
 
     a {
       font-size: 15px;
       font-weight: bold;
       line-height: 24px;
       color: $text-black;
+    }
+
+    a[href] {
+      &:hover,
+      &:focus {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 }
