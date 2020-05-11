@@ -1,7 +1,8 @@
 .user-list__item {
   margin: 0;
-  padding: 30px 0;
-  text-align: center;
+  padding: 27px 0 27px 23.5%;
+  position: relative;
+  text-align: left;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 
   a {
@@ -10,6 +11,61 @@
     line-height: 24px;
     color: $text-black;
   }
+
+  a[href] {
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.user-list__search-icon {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%) translateX(-50px);
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.user-list__cart-icon {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50px, -50%);
+  width: 21px;
+  height: 18px;
+  opacity: 0.2;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.user-list__search:hover .user-list__search-icon,
+.user-list__search:focus .user-list__search-icon,
+.user-list__cart:hover .user-list__cart-icon,
+.user-list__cart:focus .user-list__cart-icon {
+  opacity: 1;
+
+  path {
+    fill: #63d1bb;
+  }
+}
+
+.user-list__search:active .user-list__search-icon,
+.user-list__cart:active .user-list__cart-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,18 +82,35 @@
 
   .user-list__item {
     text-align: right;
+    box-sizing: border-box;
     margin: 0;
-    padding: 30px 30px;
+    padding: 32px 0;
     flex-grow: 1;
     box-shadow: inset 1px 0 0 0 #ececec;
+
+    &:first-child {
+      min-width: 82px;
+    }
+
+    &:last-child {
+      padding-left: 82px;
+    }
   }
 
-  .user-list__item:last-child {
-    padding: 30px 0 30px 60px;
-  }
-
-  .user-list__search--text {
+  .user-list__search-text {
     display: none;
+  }
+
+  .user-list__search-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .user-list__cart-icon {
+    left: 12%;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }
 
@@ -46,7 +119,11 @@
     width: auto;
     order: 0;
     display: flex;
-    margin-left: 25%;
+    margin-left: auto;
     padding-left: 0;
+  }
+
+  .user-list__item:last-child {
+    padding-left: 87px;
   }
 }

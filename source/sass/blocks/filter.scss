@@ -5,8 +5,8 @@
 
 .filter__header {
   background-color: $bg-grey;
-  margin-bottom: 30px;
-  padding: 74px 0;
+  margin-bottom: 23px;
+  padding: 70px 0 75px 0;
   text-align: center;
 }
 
@@ -16,22 +16,24 @@
 }
 
 .filter__description {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 9.5%;
   font-size: 13px;
 }
 
 .filter__form {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 9%;
 }
 
 .filter__fieldset {
   @include fieldset_style;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .filter__wrapper {
@@ -50,7 +52,8 @@
 }
 
 .filter__legend {
-  margin-top: 30px;
+  position: relative;
+  margin-top: 24px;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
@@ -59,12 +62,22 @@
   color: $text-blue;
 }
 
+.filter__legend::before {
+  content: "";
+  width: 76%;
+  height: 1px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background-color: #63d1bb;
+}
+
 .filter__list {
   @include ul_style;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 60px;
+  margin: 4px 0 25px 24%;
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
@@ -75,7 +88,7 @@
 .filter__footer {
   width: auto;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -86,13 +99,28 @@
 }
 
 .filter__button {
+  width: 100%;
   margin: 30px auto;
 }
 
 @media (min-width: $tablet-width) {
   .filter__header {
-    margin-bottom: 70px;
-    padding: 100px 0;
+    margin-bottom: 74px;
+    padding: 93px 0 80px 0;
+    position: relative;
+  }
+
+  .filter__header::after {
+    content: "";
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: 0 0;
   }
 
   .filter__title {
@@ -102,8 +130,8 @@
 
   .filter__description {
     width: auto;
-    padding: 0 50px;
-    margin-bottom: 70px;
+    padding: 0 6.5%;
+    margin-bottom: 7px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -113,29 +141,41 @@
     padding: 0;
   }
 
+  .filter__fieldset {
+    &--bg-grey {
+      background-color: $bg-grey;
+    }
+  }
+
   .filter__max {
-    padding: 0 50px;
+    padding: 0 6.5%;
     display: flex;
     flex-direction: row;
     align-items: baseline;
   }
 
-  .filter__wrapper--bg-grey {
-    background-color: $bg-grey;
+  .filter__wrapper {
+    &--bg-grey {
+      background-color: $bg-grey;
+    }
   }
 
   .filter__legend {
     margin: 0;
   }
 
+  .filter__legend::before {
+    display: none;
+  }
+
   .filter__list {
-    margin-left: 200px;
+    margin-left: 210px;
     font-size: 19px;
   }
 
   .filter__footer {
     margin-bottom: 0;
-    padding: 50px 50px;
+    padding: 53.5px 6.6% 49px 6.6%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -146,13 +186,18 @@
   .filter__button {
     order: -1;
     margin: 0;
-    width: 230px;
+    width: 34.5%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .filter__header {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+    padding-bottom: 105px;
+  }
+
+  .filter__header::after {
+    height: 34px;
   }
 
   .filter__title {
@@ -162,20 +207,25 @@
 
   .filter__description {
     max-width: 1150px;
+    margin-bottom: 53px;
     padding: 0 225px;
   }
 
   .filter__max {
     max-width: 1150px;
-    padding: 0 110px;
+    padding: 0 112px;
   }
 
   .filter__list {
-    margin-left: 160px;
+    margin-left: 155px;
   }
 
   .filter__footer {
     max-width: 1150px;
-    padding: 50px 225px;
+    padding: 50px 225px 48px 225px;
+  }
+
+  .filter__button {
+    width: 230px;
   }
 }

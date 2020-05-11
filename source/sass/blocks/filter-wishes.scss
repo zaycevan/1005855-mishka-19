@@ -1,19 +1,36 @@
 .customer-wishes__input {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  padding: 15px;
+  min-height: 142px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  margin-bottom: 16px;
+  padding: 15px 25px 15px 15px;
   border: solid 2px #444444;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: solid 2px #62d1ba;
+  }
+
+  &::placeholder {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .customer-wishes__input {
-    margin: 50px 0 0 130px;
+    margin: 48px 0 0 127px;
     flex-grow: 1;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .customer-wishes__input {
-    margin: 50px 115px 0 75px;
+    margin: 49.5px 113px 0 74px;
   }
 }

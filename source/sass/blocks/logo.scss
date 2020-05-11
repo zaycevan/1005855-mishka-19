@@ -5,12 +5,22 @@
 @media (min-width: $tablet-width) {
   .logo {
     display: block;
-    margin-left: 50px;
-    margin-right: 80px;
+    margin: 0;
   }
 
   .logo__image {
     width: 102px;
     height: 34px;
+  }
+
+  .logo__link {
+    &:hover img,
+    &:focus img {
+      opacity: 0.6;
+    }
+
+    &:active img {
+      opacity: 0.3;
+    }
   }
 }

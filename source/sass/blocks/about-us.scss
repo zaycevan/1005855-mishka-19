@@ -1,5 +1,5 @@
 .about-us {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
@@ -11,13 +11,15 @@
 
 .about-us__title {
   @include h2_style;
-  margin: 32px 0 0 30px;
+  margin: 27px 0 0 9%;
   padding: 0;
 }
 
 .about-us__list {
+  width: auto;
+
   @include ul_style;
-  margin-left: 30px;
+  margin-left: 9%;
   display: flex;
   flex-direction: column;
 }
@@ -25,6 +27,46 @@
 .about-us__item {
   margin-top: 30px;
   width: 250px;
+
+  path {
+    fill: #63d1bb;
+  }
+
+  &--eco svg {
+    width: 32px;
+    height: 37px;
+    margin: 0 0 15px 8px;
+  }
+
+  &--price svg {
+    width: 47px;
+    height: 27px;
+    margin: 0 0 23px 0;
+  }
+
+  &--like svg {
+    width: 34px;
+    height: 27px;
+    margin: 7px 0 15px 8px;
+  }
+
+  &--hand svg {
+    width: 35px;
+    height: 34px;
+    margin: 3px 0 13px 3px;
+  }
+
+  &--domestic svg {
+    width: 55px;
+    height: 23px;
+    margin: 5px 0 23px -7px;
+  }
+
+  &--present svg {
+    width: 33px;
+    height: 32px;
+    margin: 0 0 17px 2px;
+  }
 }
 
 .about-us__description {
@@ -33,8 +75,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    width: 100%;
-    padding: 60px 50px;
+    padding: 50px 6.3%;
     font-size: 20px;
     line-height: 22px;
   }
@@ -47,44 +88,51 @@
   }
 
   .about-us__list {
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    @include zero_offset;
+    align-items: baseline;
   }
 
   .about-us__item {
-    margin-top: 100px;
+    margin-top: 47px;
     padding-right: 40px;
     width: 50%;
     box-sizing: border-box;
-  }
 
-  .about-us__item--eco {
-    order: -5;
-  }
+    &--eco {
+      order: -5;
+    }
 
-  .about-us__item--price {
-    order: -3;
-  }
+    &--price {
+      order: -3;
+      margin-top: 60px;
+    }
 
-  .about-us__item--like {
-    order: -1;
-  }
+    &--like {
+      order: -1;
+      margin-top: 59px;
+    }
 
-  .about-us__item--hand {
-    order: -4;
-  }
+    &--hand {
+      order: -4;
+    }
 
-  .about-us__item--domestic {
-    order: -2;
+    &--domestic {
+      order: -2;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
     max-width: 1150px;
-    padding: 60px 225px;
+    padding: 60px 224px 55px 224px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
