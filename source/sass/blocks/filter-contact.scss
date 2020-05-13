@@ -48,10 +48,7 @@
   width: 25px;
   height: 25px;
   opacity: 0.2;
-
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 }
 
 .filter-contact__icon-mail {
@@ -61,10 +58,7 @@
   width: 32px;
   height: 32px;
   opacity: 0.2;
-
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 }
 
 .filter-contact__input:hover + .filter-contact__icon-tel,
@@ -74,21 +68,19 @@
 .filter-contact__input:focus + .filter-contact__icon-mail,
 .filter-contact__input:active + .filter-contact__icon-mail {
   opacity: 1;
-
-  path {
-    fill: #62d1ba;
-  }
+  fill: #62d1ba;
 }
 
 @media (min-width: $tablet-width) {
   .filter-contact__list {
     width: auto;
     margin: 25px auto;
+    margin-bottom: 26px;
     flex-grow: 1;
   }
 
   .filter-contact__item {
-    margin: 25px auto;
+    margin: 23.5px auto;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
@@ -96,7 +88,7 @@
 
   .filter-contact__input {
     width: 100%;
-    height: 52px;
+    height: 53px;
     box-sizing: border-box;
     margin-left: 135px;
     padding-left: 20px;
@@ -122,7 +114,7 @@
 
 @media (min-width: $desktop-width) {
   .filter-contact__list {
-    margin: 26px 115px 23px 0;
+    margin: 26px 113px 23px 0;
   }
 
   .filter-contact__input {
@@ -137,7 +129,7 @@
   }
 
   .filter-contact__icon-tel {
-    right: 7px;
+    right: 8px;
   }
 
   .filter-contact__icon-mail {

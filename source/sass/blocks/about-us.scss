@@ -11,7 +11,7 @@
 
 .about-us__title {
   @include h2_style;
-  margin: 27px 0 0 9%;
+  margin: 28px 0 0 9.3%;
   padding: 0;
 }
 
@@ -19,7 +19,7 @@
   width: auto;
 
   @include ul_style;
-  margin-left: 9%;
+  margin-left: 9.5%;
   display: flex;
   flex-direction: column;
 }
@@ -27,10 +27,7 @@
 .about-us__item {
   margin-top: 30px;
   width: 250px;
-
-  path {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
 
   &--eco svg {
     width: 32px;
@@ -75,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding: 50px 6.3%;
+    padding: 50px 6.4%;
     font-size: 20px;
     line-height: 22px;
   }
@@ -103,16 +100,28 @@
 
     &--eco {
       order: -5;
+
+      svg {
+        margin-left: 10px;
+      }
     }
 
     &--price {
       order: -3;
-      margin-top: 60px;
+      margin-top: 59px;
+
+      svg {
+        margin-left: 3px;
+      }
     }
 
     &--like {
       order: -1;
       margin-top: 59px;
+
+      svg {
+        margin-left: 10px;
+      }
     }
 
     &--hand {
@@ -134,5 +143,6 @@
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -5px;
   }
 }

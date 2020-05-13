@@ -17,7 +17,7 @@
   width: 21px;
   height: 14px;
   position: absolute;
-  top: -52px;
+  top: -51px;
   right: 9.5%;
   z-index: 2;
   display: block;
@@ -107,6 +107,14 @@
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
   }
 }
 

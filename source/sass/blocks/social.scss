@@ -18,24 +18,24 @@
   margin: 0 auto;
 }
 
+.social__link {
+  fill: #000000;
+}
+
 .social__link:hover,
 .social__link:focus {
-  path {
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
 }
 
 .social__link:active {
-  path {
-    opacity: 0.3;
-  }
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     width: auto;
     margin: 0 auto;
-    margin-left: 22%;
+    margin-left: 23%;
     margin-right: 11%;
   }
 

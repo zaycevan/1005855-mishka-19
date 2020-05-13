@@ -20,17 +20,19 @@
 
 @media (min-width: $tablet-width) {
   .customer-wishes__input {
-    margin: 48px 0 0 127px;
+    margin: 50px 0 0 127px;
     flex-grow: 1;
 
     &::placeholder {
       font-size: 19px;
+      line-height: 18px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .customer-wishes__input {
-    margin: 49.5px 113px 0 74px;
+    margin: 52px 113px 0 74px;
+    min-height: 143px;
   }
 }

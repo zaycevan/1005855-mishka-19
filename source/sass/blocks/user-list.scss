@@ -1,6 +1,6 @@
 .user-list__item {
   margin: 0;
-  padding: 27px 0 27px 23.5%;
+  padding: 27px 0 27px 24%;
   position: relative;
   text-align: left;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
@@ -32,10 +32,7 @@
   width: 18px;
   height: 18px;
   opacity: 0.2;
-
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 }
 
 .user-list__cart-icon {
@@ -46,10 +43,7 @@
   width: 21px;
   height: 18px;
   opacity: 0.2;
-
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 }
 
 .user-list__search:hover .user-list__search-icon,
@@ -57,10 +51,7 @@
 .user-list__cart:hover .user-list__cart-icon,
 .user-list__cart:focus .user-list__cart-icon {
   opacity: 1;
-
-  path {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
 }
 
 .user-list__search:active .user-list__search-icon,
