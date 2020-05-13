@@ -6,7 +6,7 @@
 .filter__header {
   background-color: $bg-grey;
   margin-bottom: 23px;
-  padding: 70px 0 75px 0;
+  padding: 72px 0 75px 0;
   text-align: center;
 }
 
@@ -98,6 +98,15 @@
   text-align: left;
 }
 
+.filter__note {
+  margin-left: -1px;
+
+  sup {
+    top: -0.26em;
+    font-size: 90%;
+  }
+}
+
 .filter__button {
   width: 100%;
   margin: 30px auto;
@@ -175,7 +184,7 @@
 
   .filter__footer {
     margin-bottom: 0;
-    padding: 53.5px 6.6% 49px 6.6%;
+    padding: 52px 6.6% 49px 6.6%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -186,13 +195,19 @@
   .filter__button {
     order: -1;
     margin: 0;
-    width: 34.5%;
+    width: 34.3%;
+    font-size: 17px;
+  }
+
+  .filter__note {
+    margin-right: -3px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .filter__header {
     margin-bottom: 120px;
+    padding-top: 94px;
     padding-bottom: 105px;
   }
 
@@ -222,7 +237,7 @@
 
   .filter__footer {
     max-width: 1150px;
-    padding: 50px 225px 48px 225px;
+    padding: 47.5px 225px 48px 225px;
   }
 
   .filter__button {

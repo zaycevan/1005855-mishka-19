@@ -15,7 +15,7 @@
 }
 
 .copyright__link {
-  width: 185px;
+  width: 183px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,21 +28,16 @@
 
   svg {
     margin-top: 5px;
-  }
-
-  path {
     fill: #63d1bb;
   }
 
-  &:hover,
-  &:focus {
-    path {
-      fill: #46c1ae;
-    }
+  &:hover svg,
+  &:focus svg {
+    fill: #46c1ae;
   }
 
   &:active {
-    path {
+    svg {
       opacity: 0.3;
     }
 

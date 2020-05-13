@@ -6,7 +6,7 @@
 .catalog__header {
   background-color: $bg-grey;
   margin: 0;
-  padding: 70px 0 75px 0;
+  padding: 72px 0 76px 0;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 27px 26px 10px 26px;
+  padding: 27px 26px 10px 27px;
   border: solid 1px #ececec;
 }
 
@@ -110,18 +110,13 @@
   width: 20px;
   height: 19px;
   opacity: 0.2;
+  fill: #000000;
 
-  path {
-    fill: #000000;
-  }
 
   &:hover,
   &:focus {
     opacity: 1;
-
-    path {
-      fill: #63d1bb;
-    }
+    fill: #63d1bb;
   }
 
   &:active {
@@ -183,10 +178,12 @@
 
   .catalog__name {
     font-size: 20px;
+    line-height: 24px;
   }
 
   .catalog__size {
     font-size: 15px;
+    line-height: 43px;
     margin-bottom: auto;
   }
 

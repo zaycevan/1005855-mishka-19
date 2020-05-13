@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .modal-cart {
+    left: 48.8%;
+  }
+
   .modal-cart__wrapper {
     width: 566px;
     padding: 33px 100px;

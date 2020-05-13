@@ -14,12 +14,14 @@
   }
 
   .logo__link {
-    &:hover img,
-    &:focus img {
+    fill: #000000;
+
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 
-    &:active img {
+    &:active {
       opacity: 0.3;
     }
   }

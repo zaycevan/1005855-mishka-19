@@ -87,10 +87,7 @@
   width: 40px;
   height: 62px;
   opacity: 0.5;
-
-  path {
-    fill: #149080;
-  }
+  fill: #149080;
 }
 
 .catalog-sections__link:hover .catalog-sections__icon-interior,
@@ -110,10 +107,7 @@
   width: 60px;
   height: 60px;
   opacity: 0.5;
-
-  path {
-    fill: #149080;
-  }
+  fill: #149080;
 }
 
 .catalog-sections__link:hover .catalog-sections__icon-toy,
@@ -217,7 +211,9 @@
   .catalog-sections::after {
     height: 34px;
     bottom: -16px;
-    background-position: 20px 0;
+    background-repeat: repeat;
+    background-size: 1150px 100%;
+    background-position: -40px 0;
   }
 
   .catalog-sections__description {

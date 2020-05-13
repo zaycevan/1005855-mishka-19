@@ -5,7 +5,7 @@
 .reviews__wrapper {
   width: auto;
   margin: 0 auto;
-  padding: 0 9%;
+  padding: 0 9.3%;
   padding-bottom: 50px;
   position: relative;
   box-sizing: border-box;
@@ -37,6 +37,10 @@
   @include zero_offset;
   line-height: 31px;
   margin-bottom: 24px;
+
+  br {
+    display: none;
+  }
 }
 
 .reviews__author-name {
@@ -64,13 +68,14 @@
 .reviews__next {
   margin: auto;
   width: 50%;
-  padding: 10px 0;
+  padding: 11px 0;
   border: 1px solid #ececec;
   background-color: $bg-white;
 
   svg {
     width: 50px;
     height: 26px;
+    fill: #000000;
   }
 
   &:hover,
@@ -108,7 +113,7 @@
   }
 
   .reviews__wrapper {
-    padding: 73px 6.4% 48px 6.4px;
+    padding: 74px 6.4% 48px 6.4%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -158,8 +163,8 @@
   .reviews__button {
     width: 175px;
     position: absolute;
-    right: 7%;
-    bottom: 158px;
+    right: 6.3%;
+    bottom: 132px;
 
     @include zero-offset;
   }
@@ -184,28 +189,43 @@
 
   .reviews__wrapper::after {
     height: 23px;
+    width: 1050px;
+    margin: 0 50px;
+    bottom: -3px;
+    background-size: 1050px 100%;
+    background-position: 25px 0;
   }
 
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -4px;
   }
 
   .reviews__write {
-    margin-top: 11px;
+    margin-top: 12px;
   }
 
   .reviews__item {
     margin-top: 44px;
-    margin-right: 104px;
+    margin-right: 100px;
   }
 
   .reviews__text {
     margin-bottom: 39px;
+
+    br {
+      display: inline-block;
+    }
+  }
+
+  .reviews__author-name,
+  .reviews__author-email {
+    font-size: 17px;
   }
 
   .reviews__button {
     right: 50px;
-    bottom: 150px;
+    bottom: 183px;
   }
 }

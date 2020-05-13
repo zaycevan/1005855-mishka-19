@@ -25,7 +25,7 @@
   position: absolute;
   z-index: 3;
   top: -2px;
-  left: -53px;
+  left: -54px;
   width: 24px;
   height: 18px;
   background-image: url("../img/icon-tick.svg");
@@ -63,20 +63,20 @@
   .filter-color__item {
     box-sizing: border-box;
     width: 50%;
-    margin-top: 48px;
+    margin-top: 48.5px;
     padding-left: 100px;
   }
 
   .filter-color__label::before {
     left: -80px;
     top: -15px;
-    width: 49px;
-    height: 49px;
+    width: 50px;
+    height: 48px;
   }
 
   .filter-color__input:checked + .filter-color__label::after {
     top: -1px;
-    left: -72px;
+    left: -70px;
     width: 35px;
     height: 24px;
   }

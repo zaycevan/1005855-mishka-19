@@ -51,7 +51,7 @@
 @media (min-width: $tablet-width) {
   .filter-customer__list {
     width: auto;
-    margin: 26px 0 50px 125px;
+    margin: 24px 0 50px 125px;
     flex-grow: 1;
   }
 
@@ -69,10 +69,10 @@
   }
 
   .filter-customer__input {
-    height: 54px;
+    height: 55px;
     box-sizing: border-box;
     flex-grow: 1;
-    padding-left: 20px;
+    padding-left: 19px;
 
     &::placeholder {
       font-size: 19px;
@@ -81,7 +81,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .filter-customer__label {
+    margin-top: 39.5px;
+  }
+
   .filter-customer__list {
-    margin: 25px 115px 50px 72px;
+    margin: 25px 113px 50px 72px;
   }
 }
