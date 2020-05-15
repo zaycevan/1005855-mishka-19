@@ -199,11 +199,12 @@
 
 @media (min-width: $desktop-width) {
   .catalog__header {
-    padding: 93px 0 115px 0;
+    padding: 94px 0 115px 0;
   }
 
   .catalog__header::after {
     height: 34px;
+    background-position: -13px 0;
   }
 
   .catalog__title {
@@ -214,7 +215,7 @@
   .catalog__wrapper {
     max-width: 1150px;
     margin-top: 63px;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
     padding: 0 50px;
   }
 

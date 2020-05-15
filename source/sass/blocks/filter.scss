@@ -213,6 +213,7 @@
 
   .filter__header::after {
     height: 34px;
+    background-position: -13px 0;
   }
 
   .filter__title {
@@ -237,7 +238,7 @@
 
   .filter__footer {
     max-width: 1150px;
-    padding: 47.5px 225px 48px 225px;
+    padding: 48px 225px 49px 225px;
   }
 
   .filter__button {

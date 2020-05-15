@@ -212,8 +212,8 @@
     height: 34px;
     bottom: -16px;
     background-repeat: repeat;
-    background-size: 1150px 100%;
-    background-position: -40px 0;
+    background-size: 1250px 100%;
+    background-position: -13px 0;
   }
 
   .catalog-sections__description {
@@ -223,22 +223,24 @@
 
   .catalog-sections__wrapper {
     max-width: 1150px;
+    padding-top: 154px;
   }
 
   .catalog-sections__list {
-    margin-top: 360px;
-    padding: 0 4.5%;
+    margin-top: 359px;
+    padding: 0 50px;
   }
 
   .catalog-sections__link {
-    padding: 27px 0 35px 35px;
+    padding: 27px 0 35px 37px;
   }
 
   .catalog-sections__icon-interior {
-    right: 35px;
+    right: 36px;
   }
 
   .catalog-sections__icon-toy {
     right: 35px;
+    top: 52%;
   }
 }

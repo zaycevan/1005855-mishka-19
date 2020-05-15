@@ -148,7 +148,7 @@
 @media (min-width: $desktop-width) {
   .product-week__wrapper {
     max-width: 1150px;
-    padding: 122px 50px 95px 50px;
+    padding: 120px 50px 95px 50px;
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
@@ -162,22 +162,23 @@
   }
 
   .product-week__title {
+    margin-top: 2px;
     margin-bottom: 49px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .product-week__name {
-    margin: 15px 32px;
+    margin: 17px 35px 15px 30px;
   }
 
   .product-week__description {
-    margin-left: 174px;
+    margin-left: 175px;
   }
 
   .product-week__text {
     width: 33%;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   .product-week__properties {
@@ -199,6 +200,6 @@
   }
 
   .product-week__cart {
-    width: 33%;
+    width: 33.3%;
   }
 }

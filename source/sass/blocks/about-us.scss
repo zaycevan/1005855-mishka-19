@@ -102,25 +102,26 @@
       order: -5;
 
       svg {
-        margin-left: 10px;
+        margin: 1px 0 14px 10px;
       }
     }
 
     &--price {
       order: -3;
-      margin-top: 59px;
+      margin-top: 57px;
 
       svg {
-        margin-left: 3px;
+        margin: 1px 0 22px 1px;
       }
     }
 
     &--like {
       order: -1;
-      margin-top: 59px;
+      margin-top: 56px;
 
       svg {
-        margin-left: 10px;
+        margin-left: 8px;
+        margin-bottom: 17px;
       }
     }
 
@@ -137,12 +138,12 @@
 @media (min-width: $desktop-width) {
   .about-us {
     max-width: 1150px;
-    padding: 60px 224px 55px 224px;
+    padding: 59px 224px 55px 225px;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: -5px;
+    margin-left: -6px;
   }
 }

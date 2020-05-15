@@ -114,12 +114,13 @@
 
 @media (min-width: $desktop-width) {
   .filter-contact__list {
-    margin: 26px 113px 23px 0;
+    margin: 26px 113px 26px 0;
   }
 
   .filter-contact__input {
     width: 100%;
     margin-left: 80px;
+    height: 52.5px;
   }
 
   .filter-contact__item--mail {

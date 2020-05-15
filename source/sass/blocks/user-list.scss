@@ -107,7 +107,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: auto;
+    width: 350px;
     order: 0;
     display: flex;
     margin-left: auto;
@@ -115,6 +115,6 @@
   }
 
   .user-list__item:last-child {
-    padding-left: 87px;
+    padding-left: 83px;
   }
 }
