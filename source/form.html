@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>Вязание на заказ</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <script>
       document.createElement( "picture" );
     </script>
@@ -76,7 +77,7 @@
           <fieldset class="filter__fieldset">
             <div class="filter__wrapper">
               <div class="filter__max">
-                <legend class="filter__legend">Тип</legend>
+                <p class="filter__legend">Тип</p>
                 <ul class="filter__list filter-type">
                   <li class="filter-type__item">
                     <input class="filter-type__input visually-hidden" type="radio" name="type-product" value="interior" id="type-interior" checked>
@@ -93,7 +94,7 @@
           <fieldset class="filter__fieldset filter__fieldset--bg-grey">
             <div class="filter__wrapper">
               <div class="filter__max">
-                <legend class="filter__legend">Цвет</legend>
+                <p class="filter__legend">Цвет</p>
                 <ul class="filter__list filter-color">
                   <li class="filter-color__item">
                     <input class="filter-color__input visually-hidden" type="checkbox" name="color-product" id="color-white" checked>
@@ -153,7 +154,7 @@
                   </svg>
                 </li>
                 <li class="filter-contact__item filter-contact__item--mail">
-                  <label class="filter-contact__label filter__legend" for="customer-email">E&#8209mail</label>
+                  <label class="filter-contact__label filter__legend" for="customer-email">E-mail</label>
                   <input class="filter-contact__input" id="customer-email" type="email" name="customer-info" value="" placeholder="Ваш Email*">
                   <svg class="filter-contact__icon-mail" width="32" height="32">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
